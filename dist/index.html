@@ -8,69 +8,136 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 
   <title>CY Travel Permit Generator</title>
-  <link rel="stylesheet" href="/attributes/styles.css">
   <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" type="text/css" href="print.css">
-  <script src="bundle.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="text-center text-gray-800 py-20 px-6">
-      <h1 class="text-5xl font-bold mt-0 mb-6">Cyprus Travel Permit Generator for Minors</h1>
-      <h3 class="text-2xl font-bold mb-2">Δήλωση συγκατάθεσης του κηδεμόνα για ταξίδι</h3>
-      <h3 class="text-2xl font-bold mb-2">Reşit Olmayanlar için seyahat izni belgesi</h3>
-      <h3 class="text-2xl font-bold mb-8">Travel Permit for Minors</h3>
-      <a class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-        data-mdb-ripple="true" data-mdb-ripple-color="light" href="/generate/" role="button">Get started</a>
-    </div>
-  </header>
-  <div>
-    <nav>
-      <h1>Cyprus Travel Permit Generator for Minors</h1>
-    </nav>
+
+
+
+  <div class="page1">
+    <header>
+      <div class="text-center text-gray-800 py-20 px-6">
+        <h1 class="text-5xl font-bold mt-0 mb-6">Cyprus Travel Permit Generator for Minors</h1>
+        <h3 class="text-2xl font-bold mb-2">Δήλωση συγκατάθεσης του κηδεμόνα για ταξίδι</h3>
+        <h3 class="text-2xl font-bold mb-2">Reşit Olmayanlar için seyahat izni belgesi</h3>
+        <h3 class="text-2xl font-bold mb-8">Travel Permit for Minors</h3>
+        <a href=" #generate" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded
+          shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center'
+          data-mdb-ripple=true data-mdb-ripple-color=light" href="#generate" role="button">Get started</a>
+      </div>
+    </header>
   </div>
-  <div id="page">
+
+
+
+
+
+  <div class="page2" id="generate">
+
+    <div>
+      <nav class="bg-blue-600 text-white font-medium text-xl">
+        <h1>Cyprus Travel Permit Generator for Minors</h1>
+      </nav>
+    </div>
+    <form>
+      <label for="" class="label" id="">
+        <h3>Minor Name</h3>
+      </label>
+      <label for="" class="label" id="">
+        <h3>Minor Surname</h3>
+      </label>
+      <label for="" class="label" id="">
+        <h3>Minor Birth Day</h3>
+      </label>
+      <label for="" class="label" id="">
+        <h3>Minor Birth Month</h3>
+      </label>
+      <label for="" class="label" id="">
+        <h3>Minor Birth Year</h3>
+      </label>
+      <label for="" class="label" id="">
+        <h3>Minor Name</h3>
+      </label>
+
+      <input type="text" name="minorName" id="" class="input" placeholder="Minor Name">
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+  <div id="page" class="">
     <div id="title">
-      <h2>Δήλωση συγκατάθεσης του κηδεμόνα για ταξίδι</h2>
-      <h2>Reşit Olmayanlar için seyahat izni belgesi</h2>
-      <h2>Travel Permit for Minors</h1>
+      <span>Δήλωση συγκατάθεσης του κηδεμόνα για ταξίδι</span>
+      <span>Reşit Olmayanlar için seyahat izni belgesi</span>
+      <span>Travel Permit for Minors</span>
     </div>
     <div id="minor">
-      <div class="minorIn">
-        <h2 class="title">Γονείς / Ebevyn / Parent </h2>
-        <br />
-        <h3 class="name">Ονομα / İsim / Name</h3>
-        <h3 class="data">NAME</h3>
+      <div>
+        <img class='minor1img' src="/img/minor1.png" alt="">
 
-        <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
-        <h3 class="data">SURNAME</h3>
+        <h2 class="title minorIn">Ανήλικος / Çocuk / Minor </h2>
 
-        <h3 class="name">Ημερομηνία γεννήσεως / Doğum Tarihi /</h3>
-        <h3 class="name">Date of Birth</h3>
-        <h3 class="data">01/01/2000</h3>
+        <div class="flex-row">
 
-        <h3 class="name">Αριθ. Τηλεφώνου / Telefon Numarası /</h3>
-        <h3 class="name">Telephone Number</h3>
-        <h3 class="data">+905559999998</h3>
+          <div class="pd-15 pd-r-50">
 
-        <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / </h3>
-        <h3 class="name">ID Card Number</h3>
-        <h3 class="data">0123456789</h3>
+            <h3 class="name">Ονομα / İsim /</h3>
+            <h3 class="name">Name</h3>
+
+            <h3 class="data" id="minorName">NAME</h3>
+
+            <h3 class="name">Eπώνυμο / Soyadı /</h3>
+            <h3 class="name">Surname</h3>
+
+            <h3 class="data" id="minorSurname">SURNAME</h3>
+          </div>
+          <div class="pd-15 pd-r-50">
+            <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / </h3>
+            <h3 class="name">ID Card Number</h3>
+            <h3 class="data" id="minorId">0123456789</h3>
+
+            <h3 class="name">Ημερομηνία γεννήσεως / Doğum Tarihi /</h3>
+            <h3 class="name">Date of Birth</h3>
+            <h3 class="data" id="minorBirthday">01/01/2000</h3>
+          </div>
+          <div class="pd-15">
+            <h3 class="name">Αριθ. Τηλεφώνου / Telefon Numarası /</h3>
+            <h3 class="name">Telephone Number</h3>
+            <h3 class="data" id="minorPhone">+905559999998</h3>
+
+
+
+            <h3 class="name">Ισχύει μέχρι / Bitiş tarihi / </h3>
+            <h3 class="name">Valid Through</h3>
+            <h3 class="data" id="minorId">02 / 02 / 2024</h3>
+          </div>
+
+
+        </div>
+
       </div>
     </div>
     <div id="decleration">
+      <img class='minor1img' src="/img/minor2.png" alt="">
 
     </div>
     <div id="parents">
       <div id="parent1">
+        <img class='parent1img' src="/img/parent1.png" alt="">
         <h2 class="title">Γονείς / Ebevyn / Parent </h2>
-        <br />
         <h3 class="name">Ονομα / İsim / Name</h3>
         <h3 class="data">NAME</h3>
 
@@ -90,8 +157,9 @@
         <h3 class="data">0123456789</h3>
       </div>
       <div id="parent2">
+        <img class='parent1img' src="/img/parent2.png" alt="">
+
         <h2 class="title">Γονείς / Ebevyn / Parent </h2>
-        <br />
         <h3 class="name">Ονομα / İsim / Name</h3>
         <h3 class="data">NAME</h3>
 
