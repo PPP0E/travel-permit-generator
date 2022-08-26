@@ -1,3 +1,7 @@
+:root {
+  --eublue: #004494
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,5 +27,5 @@ nav {
 }
 
 #title {
-  color: #004494;
+  color: var(--eublue);
 }
