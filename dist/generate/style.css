@@ -23,6 +23,8 @@ nav {
 #page {
   height: 297mm;
   width: 210mm;
+  border: var(--eublue) solid 3px;
+
   /*   border: var(--eublue) solid 3px;
  */
 }
@@ -84,12 +86,11 @@ nav {
 }
 
 .name {
-  font-weight: 30;
+  font-weight: 150;
 
 }
 
 .data {
   font-weight: 500;
   margin-bottom: 5px;
-  color: var(--eublue);
 }
