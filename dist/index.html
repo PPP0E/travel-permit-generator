@@ -8,15 +8,18 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
 
   <title>CY Travel Permit Generator</title>
+  <link rel="stylesheet" href="/attributes/styles.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="print.css">
+  <script src="bundle.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="bundle.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
     rel="stylesheet">
 </head>
 
-<body class="bg-gray-50">
+<body>
   <header>
     <div class="text-center text-gray-800 py-20 px-6">
       <h1 class="text-5xl font-bold mt-0 mb-6">Cyprus Travel Permit Generator for Minors</h1>
@@ -27,7 +30,93 @@
         data-mdb-ripple="true" data-mdb-ripple-color="light" href="/generate/" role="button">Get started</a>
     </div>
   </header>
-  <script src="bundle.js"></script>
+  <div>
+    <nav>
+      <h1>Cyprus Travel Permit Generator for Minors</h1>
+    </nav>
+  </div>
+  <div id="page">
+    <div id="title">
+      <h2>Δήλωση συγκατάθεσης του κηδεμόνα για ταξίδι</h2>
+      <h2>Reşit Olmayanlar için seyahat izni belgesi</h2>
+      <h2>Travel Permit for Minors</h1>
+    </div>
+    <div id="minor">
+      <div class="minorIn">
+        <h2 class="title">Γονείς / Ebevyn / Parent </h2>
+        <br />
+        <h3 class="name">Ονομα / İsim / Name</h3>
+        <h3 class="data">NAME</h3>
+
+        <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
+        <h3 class="data">SURNAME</h3>
+
+        <h3 class="name">Ημερομηνία γεννήσεως / Doğum Tarihi /</h3>
+        <h3 class="name">Date of Birth</h3>
+        <h3 class="data">01/01/2000</h3>
+
+        <h3 class="name">Αριθ. Τηλεφώνου / Telefon Numarası /</h3>
+        <h3 class="name">Telephone Number</h3>
+        <h3 class="data">+905559999999</h3>
+
+        <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / </h3>
+        <h3 class="name">ID Card Number</h3>
+        <h3 class="data">0123456789</h3>
+      </div>
+    </div>
+    <div id="decleration">
+
+    </div>
+    <div id="parents">
+      <div id="parent1">
+        <h2 class="title">Γονείς / Ebevyn / Parent </h2>
+        <br />
+        <h3 class="name">Ονομα / İsim / Name</h3>
+        <h3 class="data">NAME</h3>
+
+        <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
+        <h3 class="data">SURNAME</h3>
+
+        <h3 class="name">Ημερομηνία γεννήσεως / Doğum Tarihi /</h3>
+        <h3 class="name">Date of Birth</h3>
+        <h3 class="data">01/01/2000</h3>
+
+        <h3 class="name">Αριθ. Τηλεφώνου / Telefon Numarası /</h3>
+        <h3 class="name">Telephone Number</h3>
+        <h3 class="data">+905559999999</h3>
+
+        <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / </h3>
+        <h3 class="name">ID Card Number</h3>
+        <h3 class="data">0123456789</h3>
+      </div>
+      <div id="parent2">
+        <h2 class="title">Γονείς / Ebevyn / Parent </h2>
+        <br />
+        <h3 class="name">Ονομα / İsim / Name</h3>
+        <h3 class="data">NAME</h3>
+
+        <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
+        <h3 class="data">SURNAME</h3>
+
+        <h3 class="name">Ημερομηνία γεννήσεως / Doğum Tarihi /</h3>
+        <h3 class="name">Date of Birth</h3>
+        <h3 class="data">01/01/2000</h3>
+
+        <h3 class="name">Αριθ. Τηλεφώνου / Telefon Numarası /</h3>
+        <h3 class="name">Telephone Number</h3>
+        <h3 class="data">+905559999999</h3>
+
+        <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / </h3>
+        <h3 class="name">ID Card Number</h3>
+        <h3 class="data">0123456789</h3>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" , id="printBtn">
+    Print Form with Header
+  </button>
 </body>
+<script src="bundle.js"></script>
 
 </html>
