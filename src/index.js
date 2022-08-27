@@ -27,7 +27,7 @@ function printTest ()
     printable: "page",
     type: "html",
     css: [
-      "/style.css",
+      "/styles.css",
     ], scanStyles: false
   } );
   mainDoc.className = 'show';
