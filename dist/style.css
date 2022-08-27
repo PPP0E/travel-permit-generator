@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: var(--eublue);
 }
 
 body {
@@ -38,7 +39,7 @@ nav {
 }
 
 #page {
-  height: 297mm;
+  height: 275mm;
   width: 210mm;
   border-radius: 5px;
   /*   border: var(--eublue) solid 1px;
@@ -90,7 +91,7 @@ nav {
   font-weight: bold;
   text-align: left;
   width: 50%;
-  height: 100%;
+  height: 90%;
   padding: 7.5px;
 
 
@@ -100,7 +101,7 @@ nav {
   font-weight: bold;
   text-align: left;
   width: 50%;
-  height: 100%;
+  height: 90%;
   padding: 7.5px;
 
 }
@@ -173,4 +174,62 @@ nav {
   margin-right: 15px;
   /*   border-bottom: var(--eublue) solid 1px;
  */
+}
+
+.signature {
+  font-weight: 300;
+  text-align: left;
+  font-size: 0.8rem;
+  margin-left: 15px;
+  width: 50%;
+  color: var(--eublue);
+  /*   border-bottom: var(--eublue) solid 1px;
+ */
+}
+
+.made {
+  font-weight: 100;
+  text-align: left;
+  font-size: 0.5rem;
+  text-align: right;
+  width: 100%;
+
+
+}
+
+@page {
+  size: A4;
+  size: portrait;
+}
+
+.fd-r {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  justify-content: flex-middle;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: var(--eublue) solid 1px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--eublue);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.minorInput1 {
+  padding: 15px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
 }
