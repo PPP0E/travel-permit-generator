@@ -30,6 +30,7 @@ function printTest ()
       "/style.css",
     ], scanStyles: false
   } );
+  mainDoc.className = 'show';
 
 }
 
