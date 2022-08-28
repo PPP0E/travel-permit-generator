@@ -151,6 +151,8 @@ nav {
 
 .page2 {
   height: 100%;
+  background-color: #f2f2f2;
+
 
 
 
@@ -247,15 +249,14 @@ nav {
 
 }
 
-.minorInput1 {
+.form {
   padding: 15px;
-  background-color: #f2f2f2;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100% - 64px);
+  height: calc(100% - 128px);
 }
 
 .page1 {
@@ -334,4 +335,10 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.tac {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.8rem;
 }

@@ -7,6 +7,21 @@ const minorBirthday = document.getElementById( 'minorBirthday' );
 const mainDoc = document.getElementById( 'page' );
 minorName.innerText = 'Hello';
 
+const buttontominor1 = document.getElementById( 'buttontominor1' );
+const buttontoparent1 = document.getElementById( 'buttontoparent1' );
+/* const buttonbacktominor1 = document.getElementById( 'buttontominor1' );
+const buttontoparent2 = document.getElementById( 'buttontoparent2' );
+const buttonbacktoparent1 = document.getElementById( 'buttonbacktoparent1' ); */
+const buttontoprint = document.getElementById( 'buttontoprint' );
+/* const buttonbacktoparent2 = document.getElementById( 'buttonbacktoparent2' );
+ */
+buttontominor1.addEventListener( 'click', () => console.log( 'AGREED TO TERMS, TO MINOR' ) );
+buttontoparent1.addEventListener( 'click', () => console.log( 'TO PARENT1' ) );
+buttontoprint.addEventListener( 'click', () => console.log( 'TO PRINT PAGE' ) );
+
+
+
+
 const PDFm1Name = document.getElementById( 'PDFm1Name' );
 const PDFm1Surname = document.getElementById( 'PDFm1Surname' );
 const PDFm1Birthday = document.getElementById( 'PDFm1Birthday' );
