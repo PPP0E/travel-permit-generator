@@ -1,5 +1,4 @@
 const path = require( 'path' );
-import '/styles.css';
 
 module.exports = {
   mode: 'development',

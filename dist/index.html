@@ -48,127 +48,249 @@
         <h1>Cyprus Travel Permit Generator for Minors</h1>
       </nav>
     </div>
+    <div class="row-inputs">
+      <div class="minorInput1">
+        <div class="window">
+          <div class="input-window-header">
+            <h1>DETAILS OF MINOR</h1>
+          </div>
 
-    <div class="minorInput1">
-      <div class="window">
-        <div class="input-window-header">
-          <h1>DETAILS OF MINOR</h1>
+          <div class="margin">
+            <div>
+              <div class="input-label">
+                <h3 class="name">Ονομα / İsim / Name</h3>
+              </div>
+              <div class="">
+                <input class="input" type="text">
+              </div>
+            </div>
+
+            <div>
+              <div class="input-label">
+                <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
+              </div>
+              <div class="">
+                <input class="input" type="text">
+              </div>
+            </div>
+
+            <div>
+              <div class="input-label">
+                <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / ID Card Number</h3>
+              </div>
+              <div class="">
+                <input class="input" type="number" pattern="\d*">
+              </div>
+            </div>
+
+            <div>
+              <div class="input-label">
+                <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
+              </div>
+              <div class="">
+                <input class="input" type="number" pattern="\d*">
+              </div>
+            </div>
+
+            <div>
+              <div class="input-label">
+                <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
+              </div>
+              <div class="fd-r">
+                <select class="input input-r">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                <select class="input input-m">
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+                <select class="input input-l">
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                </select>
+              </div>
+              <br>
+            </div>
+            <div class="center"> <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded
+          shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center'
+          data-mdb-ripple=true data-mdb-ripple-color=light">NEXT</button></div>
+
+          </div>
         </div>
 
-        <div class="margin">
-          <div>
-            <div class="input-label">
-              <h3 class="name">Ονομα / İsim / Name</h3>
-            </div>
-            <div class="">
-              <input class="input" type="text">
-            </div>
+        <button type="button" , class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded
+    shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+    active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center'
+    data-mdb-ripple=true data-mdb-ripple-color=light" id="printBtn"> Print Form</button>
+      </div>
+
+      <div class="minorInput1 hide">
+        <div class="window">
+          <div class="input-window-header">
+            <h1>DETAILS OF MINOR</h1>
           </div>
 
-          <div>
-            <div class="input-label">
-              <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
+          <div class="margin">
+            <div>
+              <div class="input-label">
+                <h3 class="name">Ονομα / İsim / Name</h3>
+              </div>
+              <div class="">
+                <input class="input" type="text">
+              </div>
             </div>
-            <div class="">
-              <input class="input" type="text">
-            </div>
-          </div>
 
-          <div>
-            <div class="input-label">
-              <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / ID Card Number</h3>
+            <div>
+              <div class="input-label">
+                <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
+              </div>
+              <div class="">
+                <input class="input" type="text">
+              </div>
             </div>
-            <div class="">
-              <input class="input" type="number" pattern="\d*">
-            </div>
-          </div>
 
-          <div>
-            <div class="input-label">
-              <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
+            <div>
+              <div class="input-label">
+                <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / ID Card Number</h3>
+              </div>
+              <div class="">
+                <input class="input" type="number" pattern="\d*">
+              </div>
             </div>
-            <div class="">
-              <input class="input" type="number" pattern="\d*">
-            </div>
-          </div>
 
-          <div>
-            <div class="input-label">
-              <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
+            <div>
+              <div class="input-label">
+                <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
+              </div>
+              <div class="">
+                <input class="input" type="number" pattern="\d*">
+              </div>
             </div>
-            <div class="fd-r">
-              <select class="input input-r">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-              </select>
-              <select class="input input-m">
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-              </select>
-              <select class="input input-l">
-                <option value="2004">2004</option>
-                <option value="2005">2005</option>
-                <option value="2006">2006</option>
-                <option value="2007">2007</option>
-                <option value="2008">2008</option>
-                <option value="2009">2009</option>
-                <option value="2010">2010</option>
-                <option value="2011">2011</option>
-              </select>
-            </div>
-            <br>
-          </div>
-          <div class="center"> <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded
-            shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-            active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center'
-            data-mdb-ripple=true data-mdb-ripple-color=light">NEXT</button></div>
 
+            <div>
+              <div class="input-label">
+                <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
+              </div>
+              <div class="fd-r">
+                <select class="input input-r">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                <select class="input input-m">
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+                <select class="input input-l">
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                </select>
+              </div>
+              <br>
+            </div>
+            <div class="center"> <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded
+          shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center'
+          data-mdb-ripple=true data-mdb-ripple-color=light">NEXT</button></div>
+
+          </div>
         </div>
       </div>
-      <button type="button" , class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded
-      shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-      active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center'
-      data-mdb-ripple=true data-mdb-ripple-color=light" id="printBtn"> Print Form</button>
     </div>
+
+
+
 
   </div>
 
@@ -251,18 +373,19 @@
         <img class='parent1img' src="/img/parent1.png" alt="">
         <h2 class="title">Γονεί / Ebevyn / Parent </h2>
         <h3 class="name">Ονομα / İsim / Name</h3>
-        <h3 class="data"><strong>NAME</strong></h3>
+        <h3 class="data"><strong id="PDFp1Name">NAME</strong></h3>
         <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
-        <h3 class="data"><strong>SURNAME</strong></h3>
+        <h3 class="data"><strong id="PDFp1Surname">SURNAME</strong></h3>
         <h3 class="name">Ημερομηνία γεννήσεως / Doğum Tarihi /</h3>
         <h3 class="name">Date of Birth</h3>
-        <h3 class="data"><strong>01</strong>/<strong>01</strong>/<strong>1900</strong></h3>
+        <h3 class="data"><strong id="PDFp1Birthday">01</strong>/<strong id="PDFp1Birthmonth">01</strong>/<strong
+            id="PDFp1Birthyear">1900</strong></h3>
         <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası /</h3>
         <h3 class="name">Telephone number</h3>
-        <h3 class="data"><strong>+905559999999</strong></h3>
+        <h3 class="data"><strong id="PDFp1Telephonenumber">+905559999999</strong></h3>
         <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / </h3>
         <h3 class="name">ID Card Number</h3>
-        <h3 class="data"><strong>0123456789</strong></h3>
+        <h3 class="data"><strong id="PDFp1Idnumber">0123456789</strong></h3>
         <br />
         <br />
         <br />
@@ -273,18 +396,19 @@
         <img class='parent1img' src="/img/parent2.png" alt="">
         <h2 class="title">Γονεί / Ebevyn / Parent </h2>
         <h3 class="name">Ονομα / İsim / Name</h3>
-        <h3 class="data"><strong>NAME</strong></h3>
+        <h3 class="data"><strong id="PDFp2Name">NAME</strong></h3>
         <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
-        <h3 class="data"><strong>SURNAME</strong></h3>
+        <h3 class="data"><strong id="PDFp2Surname">SURNAME</strong></h3>
         <h3 class="name">Ημερομηνία γεννήσεως / Doğum Tarihi /</h3>
         <h3 class="name">Date of Birth</h3>
-        <h3 class="data"><strong>01</strong>/<strong>01</strong>/<strong>1900</strong></h3>
+        <h3 class="data"><strong id="PDFp2Birthday">01</strong>/<strong id="PDFp2Birthmonth">01</strong>/<strong
+            id="PDFp2Birthyear">1900</strong></h3>
         <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası /</h3>
         <h3 class="name">Telephone number</h3>
-        <h3 class="data"><strong>+905559999999</strong></h3>
+        <h3 class="data"><strong id="PDFp2Telephonenumber">+905559999999</strong></h3>
         <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / </h3>
         <h3 class="name">ID Card Number</h3>
-        <h3 class="data"><strong>0123456789</strong></h3>
+        <h3 class="data"><strong id="PDFp2Idnumber">0123456789</strong></h3>
         <br />
         <br />
         <br />

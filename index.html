@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="js/app.js" defer></script>
+  <script src="print.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="format-detection" content="telephone=no">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+
+  <title>CY Travel Permit Generator</title>
+</head>
+
+<body>
+  <div class="page1">
+    <header>
+      <div class="text-center text-gray-800 py-20 px-6">
+        <h1 class="text-5xl font-bold mt-0 mb-6">Cyprus Travel Permit Generator for Minors</h1>
+        <h3 class="text-2xl font-bold mb-2">Δήλωση συγκατάθεσης του κηδεμόνα για ταξίδι</h3>
+        <h3 class="text-2xl font-bold mb-2">Reşit Olmayanlar için seyahat izni belgesi</h3>
+        <h3 class="text-2xl font-bold mb-8">Travel Permit for Minors</h3>
+        <a href=" #generate" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded
+          shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center'
+          data-mdb-ripple=true data-mdb-ripple-color=light" href="#generate" role="button">Get started</a>
+      </div>
+    </header>
+  </div>
+
+
+  <!------------------------------------------------------------------------------->
+  <!-- PAGE 2 INPUTS -->
+  <!------------------------------------------------------------------------------->
+
+
+  <div class="page2" id="generate">
+    <div>
+      <nav class="bg-blue-600 text-white font-medium text-xl sticky">
+        <h1>Cyprus Travel Permit Generator for Minors</h1>
+      </nav>
+    </div>
+
+    <div class="minorInput1">
+      <div class="window">
+        <div class="input-window-header">
+          <h1>DETAILS OF MINOR</h1>
+        </div>
+
+        <div class="margin">
+          <div>
+            <div class="input-label">
+              <h3 class="name">Ονομα / İsim / Name</h3>
+            </div>
+            <div class="">
+              <input class="input" type="text">
+            </div>
+          </div>
+
+          <div>
+            <div class="input-label">
+              <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
+            </div>
+            <div class="">
+              <input class="input" type="text">
+            </div>
+          </div>
+
+          <div>
+            <div class="input-label">
+              <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / ID Card Number</h3>
+            </div>
+            <div class="">
+              <input class="input" type="number" pattern="\d*">
+            </div>
+          </div>
+
+          <div>
+            <div class="input-label">
+              <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
+            </div>
+            <div class="">
+              <input class="input" type="number" pattern="\d*">
+            </div>
+          </div>
+
+          <div>
+            <div class="input-label">
+              <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
+            </div>
+            <div class="fd-r">
+              <select class="input input-r">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select class="input input-m">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <select class="input input-l">
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+              </select>
+            </div>
+            <br>
+          </div>
+          <div class="center"> <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded
+            shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+            active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center'
+            data-mdb-ripple=true data-mdb-ripple-color=light">NEXT</button></div>
+
+        </div>
+      </div>
+      <button type="button" , class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded
+      shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+      active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center'
+      data-mdb-ripple=true data-mdb-ripple-color=light" id="printBtn"> Print Form</button>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!------------------------------------------------------------------------------->
+
+  <!-- PDF DESIGN STARTS HERE 
+  REMOVE THE SHOW CLASS TO SHOW PDF
+  PDF EXPORTED BY PDFJS LIBRARY
+  THANKS
+  -->
+
+  <!------------------------------------------------------------------------------->
+
+
+
+
+
+
+  <div id="page" class="show">
+    <div id="title">
+      <span>Δήλωση συγκατάθεσης του κηδεμόνα για ταξίδι</span>
+      <span>Reşit Olmayanlar için seyahat izni belgesi</span>
+      <span>Travel Permit for Minors</span>
+    </div>
+    <div id="minor">
+      <div>
+        <img class='minor1img' src="/img/minor1.png" alt="">
+        <h2 class="title minorIn">Ανήλικος / Çocuk / Minor </h2>
+        <div class="flex-row">
+          <div class="pd-15 pd-r-50">
+            <h3 class="name">Ονομα / İsim /</h3>
+            <h3 class="name">Name</h3>
+            <h3 class="data" id="minorName"><strong>0123456789</strong></h3>
+            <h3 class="name">Eπώνυμο / Soyadı /</h3>
+            <h3 class="name">Surname</h3>
+            <h3 class="data" id="minorSurname"><strong>SURNAME</strong></h3>
+          </div>
+          <div class="pd-15 pd-r-50">
+            <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / </h3>
+            <h3 class="name">ID Card Number</h3>
+            <h3 class="data" id="minorId"><strong>0123456789</strong></h3>
+            <h3 class="name">Ημερομηνία γεννήσεως / Doğum Tarihi /</h3>
+            <h3 class="name">Date of Birth</h3>
+            <h3 class="data" id="minorBirthday">
+              <strong>01</strong>/<strong>01</strong>/<strong>1900</strong>
+            </h3>
+          </div>
+          <div class="pd-15">
+            <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası /</h3>
+            <h3 class="name">Telephone number</h3>
+            <h3 class="data" id="minorPhone"><strong>+905559999998</strong></h3>
+            <h3 class="name">Ισχύει μέχρι / Bitiş tarihi / </h3>
+            <h3 class="name">Valid Through</h3>
+            <h3 class="data" id="minorId"><strong>01</strong>/<strong>01</strong>/<strong>1900</strong></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="decleration">
+      <img class='minor1img' src="/img/minor2.png" alt="">
+      <h1 class="decleration">Ως γονείς του ανήλικου παιδιού μας δίνουμε την συγκατάθεση μας έτσι ώστε το παιδί μας να
+        διασχίσεις τα σύνορα από την <strong>κατεχόμενη Κύπρο</strong> στην, <strong>Κυπριακή Δημοκρατία</strong>.
+      </h1>
+      <h1 class="decleration">Reşit olmayan çocuğumuzun ebeveynleri olarak, çocuğumuzun <strong>Kıbrıs'ın
+          kuzeyi</strong> ile <strong>Kıbrıs Cumhuriyeti</strong> arasındaki sınırı tek başına geçmesine izin
+        veriyoruz.
+      </h1>
+      <h1 class="decleration">As parents, we give our consent for our child to cross the border between the
+        <strong>northern part of Cyprus</strong> and the <strong>Republic of Cyprus</strong> by themselves.
+      </h1>
+    </div>
+    <div id="parents">
+      <div id="parent1">
+        <img class='parent1img' src="/img/parent1.png" alt="">
+        <h2 class="title">Γονεί / Ebevyn / Parent </h2>
+        <h3 class="name">Ονομα / İsim / Name</h3>
+        <h3 class="data"><strong>NAME</strong></h3>
+        <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
+        <h3 class="data"><strong>SURNAME</strong></h3>
+        <h3 class="name">Ημερομηνία γεννήσεως / Doğum Tarihi /</h3>
+        <h3 class="name">Date of Birth</h3>
+        <h3 class="data"><strong>01</strong>/<strong>01</strong>/<strong>1900</strong></h3>
+        <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası /</h3>
+        <h3 class="name">Telephone number</h3>
+        <h3 class="data"><strong>+905559999999</strong></h3>
+        <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / </h3>
+        <h3 class="name">ID Card Number</h3>
+        <h3 class="data"><strong>0123456789</strong></h3>
+        <br />
+        <br />
+        <br />
+        <img class='parent1img' src="/img/signature.png" alt="">
+        <h3 class="signature">Υπογραφή / İmza / Signature </h3>
+      </div>
+      <div id="parent2">
+        <img class='parent1img' src="/img/parent2.png" alt="">
+        <h2 class="title">Γονεί / Ebevyn / Parent </h2>
+        <h3 class="name">Ονομα / İsim / Name</h3>
+        <h3 class="data"><strong>NAME</strong></h3>
+        <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
+        <h3 class="data"><strong>SURNAME</strong></h3>
+        <h3 class="name">Ημερομηνία γεννήσεως / Doğum Tarihi /</h3>
+        <h3 class="name">Date of Birth</h3>
+        <h3 class="data"><strong>01</strong>/<strong>01</strong>/<strong>1900</strong></h3>
+        <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası /</h3>
+        <h3 class="name">Telephone number</h3>
+        <h3 class="data"><strong>+905559999999</strong></h3>
+        <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / </h3>
+        <h3 class="name">ID Card Number</h3>
+        <h3 class="data"><strong>0123456789</strong></h3>
+        <br />
+        <br />
+        <br />
+        <img class='parent1img' src="/img/signature.png" alt="">
+        <div class="fd-r">
+          <h3 class="signature">Υπογραφή / İmza / Signature </h3>
+          <span class="">
+            <p class="made">Made with <strong>Cyprus Travel Permit Generator </strong></p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
