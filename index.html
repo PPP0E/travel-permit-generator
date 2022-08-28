@@ -115,7 +115,7 @@
               <h3 class="name">Ονομα / İsim / Name</h3>
             </div>
             <div class="">
-              <input id="inputminorname" class="input" type="text">
+              <input onkeydown="return /[a-z]/i.test(event.key)" id="inputminorname" class="input" type="text">
             </div>
           </div>
 
@@ -124,7 +124,7 @@
               <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
             </div>
             <div class="">
-              <input id="inputminorsurname" class="input" type="text">
+              <input onkeydown="return /[a-z]/i.test(event.key)" id="inputminorsurname" class="input" type="text">
             </div>
           </div>
 
@@ -133,7 +133,9 @@
               <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / ID Card Number</h3>
             </div>
             <div class="">
-              <input id="inputminoridcardnumber" class="input" type="number" pattern="\d*">
+              <input
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                maxlength="10" id="inputminoridcardnumber" class="input" type="number" pattern="\d*">
             </div>
           </div>
 
@@ -244,7 +246,7 @@
             <div class="">
 
               <!------------INPUT---------------------->
-              <input id="inputparent1name" class="input" type="text">
+              <input onkeydown="return /[a-z]/i.test(event.key)" id="inputparent1name" class="input" type="text">
               <!------------INPUT---------------------->
 
             </div>
@@ -256,7 +258,7 @@
             </div>
             <div class="">
               <!------------INPUT---------------------->
-              <input id="inputparent1surname" class="input" type="text">
+              <input onkeydown="return /[a-z]/i.test(event.key)" id="inputparent1surname" class="input" type="text">
               <!------------INPUT---------------------->
             </div>
           </div>
@@ -267,7 +269,9 @@
             </div>
             <div class="">
               <!------------INPUT---------------------->
-              <input id="inputparent1idcardnumber" class="input" type="number" pattern="\d*">
+              <input
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                maxlength="10" id="inputparent1idcardnumber" class="input" type="number" pattern="\d*">
               <!------------INPUT---------------------->
             </div>
           </div>
@@ -471,12 +475,16 @@
         </div>
 
         <div class="margin">
+
           <div>
             <div class="input-label">
+              <div class="center"> <strong>This section is optional and if left empty it will not be printed. Please
+                  note that without this
+                  section the document may not be valid</strong><br></div>
               <h3 class="name">Ονομα / İsim / Name</h3>
             </div>
             <div class="">
-              <input class="input" type="text">
+              <input onkeydown="return /[a-z]/i.test(event.key)" id="inputparent2name" class="input" type="text">
             </div>
           </div>
 
@@ -485,7 +493,7 @@
               <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
             </div>
             <div class="">
-              <input class="input" type="text">
+              <input onkeydown="return /[a-z]/i.test(event.key)" id="inputparent2surname" class="input" type="text">
             </div>
           </div>
 
@@ -494,16 +502,9 @@
               <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / ID Card Number</h3>
             </div>
             <div class="">
-              <input class="input" type="number" pattern="\d*">
-            </div>
-          </div>
-
-          <div>
-            <div class="input-label">
-              <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
-            </div>
-            <div class="">
-              <input class="input" type="number" pattern="\d*">
+              <input
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                maxlength="10" id="inputparent2idcardnumber" class="input" type="number" pattern="\d*">
             </div>
           </div>
 
@@ -512,16 +513,29 @@
               <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
             </div>
             <div class="fd-r">
-              <select class="input input-r">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
+              <select id="inputparent2phoneprefix" class="input p-input-l">
+                <option value="+90">+90</option>
+                <option value="+357">+357</option>
+              </select>
+              <input id="inputparent2phonenumber" class="input p-input-r" type="number" pattern="\d*">
+            </div>
+          </div>
+
+          <div>
+            <div class="input-label">
+              <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
+            </div>
+            <div class="fd-r">
+              <select id="inputparent2dobday" class="input input-r">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
                 <option value="10">10</option>
                 <option value="11">11</option>
                 <option value="12">12</option>
@@ -545,21 +559,21 @@
                 <option value="30">30</option>
                 <option value="31">31</option>
               </select>
-              <select class="input input-m">
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
+              <select id="inputparent2dobmonth" class="input input-m">
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
                 <option value="10">October</option>
                 <option value="11">November</option>
                 <option value="12">December</option>
               </select>
-              <select class="input input-l">
+              <select id="inputparent2dobyear" class="input input-l">
                 <option value="1900">1900</option>
                 <option value="1901">1901</option>
                 <option value="1902">1902</option>
@@ -689,61 +703,31 @@
     <div class="form hide" id="inputprintpage">
       <div class="window">
         <div class="input-window-header">
-          <h1>EXTRA DETAILS</h1>
+          <h1>VALIDITY PERIOD</h1>
         </div>
 
         <div class="margin">
           <div>
             <div class="input-label">
-              <h3 class="name">Ονομα / İsim / Name</h3>
-            </div>
-            <div class="">
-              <input class="input" type="text">
-            </div>
-          </div>
+              <strong>Leave this field empty for the expiry period of the document to be on the 18<sup>th</sup> birthday
+                of the
+                minor.</strong>
+              <br />
+              <h3 class="name">Ισχύει μέχρι / Bitiş tarihi / Valid through</h3>
 
-          <div>
-            <div class="input-label">
-              <h3 class="name">Eπώνυμο / Soyadı / Surname</h3>
-            </div>
-            <div class="">
-              <input class="input" type="text">
-            </div>
-          </div>
-
-          <div>
-            <div class="input-label">
-              <h3 class="name">Αριθμός Ταυτότητας / Kimlik Kartı Numarası / ID Card Number</h3>
-            </div>
-            <div class="">
-              <input class="input" type="number" pattern="\d*">
-            </div>
-          </div>
-
-          <div>
-            <div class="input-label">
-              <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
-            </div>
-            <div class="">
-              <input class="input" type="number" pattern="\d*">
-            </div>
-          </div>
-
-          <div>
-            <div class="input-label">
-              <h3 class="name">Αριθ. Τηλεφώνου / Telefon numarası / Telephone number</h3>
             </div>
             <div class="fd-r">
-              <select class="input input-r">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
+              <select id="inputminorvalidday" class="input input-r">
+                <option value=""></option>
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="03">3</option>
+                <option value="04">4</option>
+                <option value="05">5</option>
+                <option value="06">6</option>
+                <option value="07">7</option>
+                <option value="08">8</option>
+                <option value="09">9</option>
                 <option value="10">10</option>
                 <option value="11">11</option>
                 <option value="12">12</option>
@@ -767,29 +751,33 @@
                 <option value="30">30</option>
                 <option value="31">31</option>
               </select>
-              <select class="input input-m">
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
+              <select id="inputminorvalidmonth" class="input input-m">
+                <option value=""></option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
                 <option value="10">October</option>
                 <option value="11">November</option>
                 <option value="12">December</option>
               </select>
-              <select class="input input-l">
-                <option value="2004">2004</option>
-                <option value="2005">2005</option>
-                <option value="2006">2006</option>
-                <option value="2007">2007</option>
-                <option value="2008">2008</option>
-                <option value="2009">2009</option>
-                <option value="2010">2010</option>
-                <option value="2011">2011</option>
+              <select id="inputminorvalidyear" class="input input-l">
+                <option value=""></option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+
               </select>
             </div>
             <br>
