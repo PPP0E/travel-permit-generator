@@ -45,6 +45,10 @@ const inputparent2dobyear = document.getElementById( 'inputparent2dobyear' );
 const inputparent2phoneprefix = document.getElementById( 'inputparent2phoneprefix' );
 const inputparent2phonenumber = document.getElementById( 'inputparent2phonenumber' );
 
+const inputminorvalidday = document.getElementById( 'inputminorvalidday' );
+const inputminorvalidmonth = document.getElementById( 'inputminorvalidmonth' );
+const inputminorvalidyear = document.getElementById( 'inputminorvalidyear' );
+
 
 
 
@@ -211,33 +215,36 @@ let data = {
 
 function changePDF ()
 {
+  /* ----------NAME CHANGER----------
+ */
   PDFm1Name.innerHTML = data.minor.name.toUpperCase();
+  PDFp1Name.innerHTML = data.parent1.name.toUpperCase();
+  PDFp2Name.innerHTML = data.parent2.name.toUpperCase();
+
+  /* ----------SURNAME CHANGER----------*/
+  PDFp2Surname.innerHTML = data.parent2.surname.toUpperCase();
   PDFm1Surname.innerHTML = data.minor.surname.toLocaleUpperCase();
+  PDFp1Surname.innerHTML = data.parent1.surname.toUpperCase();
+
+  /* ----------BIRTHDAY CHANGER----------*/
   PDFm1Birthday.innerHTML = data.minor.dob.day;
   PDFm1Birthmonth.innerHTML = data.minor.dob.month;
   PDFm1Birthyear.innerHTML = data.minor.dob.year;
-  PDFm1Idnumber.innerHTML = data.minor.idcardnumber;
-  if ( !data.minor.idcardnumber )
-  {
-    PDFm1Idnumber.innerHTML = '____________________';
+  PDFp1Birthday.innerHTML = data.parent1.dob.day;
+  PDFp1Birthmonth.innerHTML = data.parent1.dob.month;
+  PDFp1Birthyear.innerHTML = data.parent1.dob.year;
+  PDFp2Birthday.innerHTML = data.parent2.dob.day;
+  PDFp2Birthmonth.innerHTML = data.parent2.dob.month;
+  PDFp2Birthyear.innerHTML = data.parent2.dob.year;
 
-  } else
-  {
-    PDFm1Idnumber.innerHTML = data.minor.idcardnumber;
-  }
+  /* ----------ID CARD CHANGER----------*/
+  PDFm1Idnumber.innerHTML = !data.minor.idcardnumber ? '____________________' : PDFm1Idnumber.innerHTML = data.minor.idcardnumber;
+  PDFp1Idnumber.innerHTML = !data.parent1.idcardnumber ? '____________________' : PDFp1Idnumber.innerHTML = data.parent1.idcardnumber;
+  PDFp2Idnumber.innerHTML = !data.parent2.idcardnumber ? '____________________' : PDFp2Idnumber.innerHTML = data.parent2.idcardnumber;
 
-  PDFvalidUntilDay.innerHTML = data.minor.validuntil.day;
-  if ( !data.minor.validuntil.day && !data.minor.validuntil.month && !data.minor.validuntil.year )
-  {
-    PDFvalidUntilDay.innerHTML = data.minor.dob.day;
-    PDFvalidUntilMonth.innerHTML = data.minor.dob.month;
-    PDFvalidUntilYear.innerHTML = parseInt( data.minor.dob.year ) + 18;
-  } else
-  {
-    PDFvalidUntilDay.innerHTML = data.minor.validuntil.day;
-    PDFvalidUntilMonth.innerHTML = data.minor.validuntil.month;
-    PDFvalidUntilYear.innerHTML = data.minor.validuntil.year;
-  }
+  /* ----------PHONE NUMBER CHANGER----------*/
+  /* ---MINOR---*/
+
   if ( data.minor.phone.prefix === '+90' )
   {
     let number = data.minor.phone.number.slice( -10 );
@@ -250,17 +257,47 @@ function changePDF ()
     PDFm1Telephonenumber.innerHTML = ( '+357' + ' ' + number.charAt( 0 ) + number.charAt( 1 ) + " " + number.slice( -6 ) );
   }
 
-  PDFp1Name.innerHTML = data.parent1.name.toUpperCase();
-  PDFp1Surname.innerHTML = data.parent1.surname.toUpperCase();
-  PDFp1Birthday.innerHTML = data.parent1.dob.day;
-  PDFp1Birthmonth.innerHTML = data.parent1.dob.month;
-  PDFp1Birthyear.innerHTML = data.parent1.dob.year;
-  PDFp1Idnumber.innerHTML = data.parent1.idcardnumber;
-  if ( !data.parent1.idcardnumber )
+  if ( data.minor.phone.prefix && !data.minor.phone.number )
   {
-    PDFp1Idnumber.innerHTML = '____________________';
-
+    PDFm1Telephonenumber.innerHTML = '-';
   }
+
+  /* ---PARENT1---*/
+  if ( data.parent1.phone.prefix === '+90' )
+  {
+    let number = data.parent1.phone.number.slice( -10 );
+    PDFp1Telephonenumber.innerHTML = ( '+90' + ' ' + number.charAt( 0 ) + number.charAt( 1 ) + number.charAt( 2 ) + ' ' + number.charAt( 3 ) + number.charAt( 4 ) + number.charAt( 5 ) + ' ' + number.charAt( 6 ) + number.charAt( 7 ) + ' ' + number.charAt( 8 ) + number.charAt( 9 ) );
+  }
+
+  if ( data.parent1.phone.prefix === '+357' )
+  {
+    let number = data.parent1.phone.number.slice( -8 );
+    PDFp1Telephonenumber.innerHTML = ( '+357' + ' ' + number.charAt( 0 ) + number.charAt( 1 ) + " " + number.slice( -6 ) );
+  }
+  if ( data.parent1.phone.prefix && !data.parent1.phone.number )
+  {
+    PDFp1Telephonenumber.innerHTML = '-';
+  }
+
+  /* ---PARENT2---*/
+  if ( data.parent2.phone.prefix === '+90' )
+  {
+    let number = data.parent2.phone.number.slice( -10 );
+    PDFp2Telephonenumber.innerHTML = ( '+90' + ' ' + number.charAt( 0 ) + number.charAt( 1 ) + number.charAt( 2 ) + ' ' + number.charAt( 3 ) + number.charAt( 4 ) + number.charAt( 5 ) + ' ' + number.charAt( 6 ) + number.charAt( 7 ) + ' ' + number.charAt( 8 ) + number.charAt( 9 ) );
+  }
+
+  if ( data.parent2.phone.prefix === '+357' )
+  {
+    let number = data.parent2.phone.number.slice( -8 );
+    PDFp2Telephonenumber.innerHTML = ( '+357' + ' ' + number.charAt( 0 ) + number.charAt( 1 ) + " " + number.slice( -6 ) );
+  }
+
+  if ( data.parent2.phone.prefix && !data.parent2.phone.number )
+  {
+    PDFp1Telephonenumber.innerHTML = '-';
+  }
+
+  /* ----------PARENT2 SECTION REMOVER----------*/
   if ( !data.parent2.name && !data.parent2.surname && !data.parent2.idcardnumber )
   {
     const parent2hide = document.getElementById( 'parent2' );
@@ -268,34 +305,36 @@ function changePDF ()
     console.log( 'NOPARENT2' );
     return;
   }
-
-  PDFp1Telephonenumber.innerHTML = '';
-
-  PDFp2Name.innerHTML = data.parent2.name;
-  PDFp2Surname.innerHTML = data.parent2.surname;
-  PDFp2Birthday.innerHTML = data.parent2.dob.day;
-  PDFp2Birthmonth.innerHTML = data.parent2.dob.month;
-  PDFp2Birthyear.innerHTML = data.parent2.dob.year;
-  PDFp2Idnumber.innerHTML = data.parent2.idcardnumber;
-  if ( !data.parent2.idcardnumber )
-  {
-    PDFp2Idnumber.innerHTML = '____________________';
-
-  }
-  PDFp2Telephonenumber.innerHTML = '';
 }
 
 
 
-
-
-
-
-
-
-
-function printTest ()
+function printDocument ()
 {
+  if ( !data.minor.name || !data.parent1.name || 1 === 0 )
+  {
+    alert( 'Please fill in the required fields.' );
+    return;
+  }
+
+  changePDF();
+
+  /* ----------VALIDITY PERIOD CHANGER----------*/
+  data.minor.validuntil.day = inputminorvalidday.value;
+  data.minor.validuntil.month = inputminorvalidmonth.value;
+  data.minor.validuntil.year = inputminorvalidyear.value;
+  if ( data.minor.validuntil.day && data.minor.validuntil.month && data.minor.validuntil.year )
+  {
+    PDFvalidUntilDay.innerHTML = data.minor.validuntil.day;
+    PDFvalidUntilMonth.innerHTML = data.minor.validuntil.month;
+    PDFvalidUntilYear.innerHTML = data.minor.validuntil.year;
+  } else
+  {
+    PDFvalidUntilDay.innerHTML = data.minor.dob.day;
+    PDFvalidUntilMonth.innerHTML = data.minor.dob.month;
+    PDFvalidUntilYear.innerHTML = parseInt( data.minor.dob.year ) + 18;
+  }
+
   changePDF();
   mainDoc.className = '';
   printJS( {
@@ -310,4 +349,4 @@ function printTest ()
 }
 
 
-document.getElementById( "printBtn" ).addEventListener( "click", printTest );
+document.getElementById( "printBtn" ).addEventListener( "click", printDocument );
