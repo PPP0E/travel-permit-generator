@@ -36,6 +36,8 @@ nav {
   align-items: center;
   padding: 1rem;
   background-color: #f2f2f2;
+  top: 0;
+  width: 100%;
 }
 
 .show {
@@ -152,6 +154,9 @@ nav {
 .page2 {
   height: 100%;
   background-color: #f2f2f2;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 
 
 
@@ -268,7 +273,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100% - 128px);
+  height: calc(100% - 55px);
   animation: SlideIn 0.5s ease-in-out;
 }
 
@@ -279,7 +284,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100% - 128px);
+  height: calc(100% - 55px);
   animation: SlideOut 0.5s ease-in-out;
 }
 
@@ -350,10 +355,13 @@ nav {
 }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
+  z-index: 100;
+  display: flex;
+  align-self: auto;
   top: 0;
-  z-index: 1;
-  display: block
+
 }
 
 .hide {
