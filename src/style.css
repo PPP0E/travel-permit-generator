@@ -209,6 +209,18 @@ nav {
 @page {
   size: A4;
   size: portrait;
+  header: none;
+  footer: none;
+}
+
+@print {
+  @page :footer {
+    display: none
+  }
+
+  @page :header {
+    display: none
+  }
 }
 
 .fd-r {
@@ -257,6 +269,18 @@ nav {
   justify-content: center;
   align-items: center;
   height: calc(100% - 128px);
+  animation: SlideIn 0.5s ease-in-out;
+}
+
+.forml {
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 128px);
+  animation: SlideOut 0.5s ease-in-out;
 }
 
 .page1 {
@@ -284,8 +308,19 @@ nav {
   border-radius: 0 5px 5px 0 !important;
 }
 
+.p-input-l {
+  border-radius: 5px 0 0 5px !important;
+  width: 96px;
+}
+
 .input-r {
   border-radius: 5px 0 0 5px !important;
+}
+
+.p-input-r {
+  border-radius: 0 5px 5px 0 !important;
+  border-left: none;
+
 }
 
 .input-m {
@@ -323,6 +358,7 @@ nav {
 
 .hide {
   display: none !important;
+  animation: SlideOut 0.5s ease-in-out;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -341,4 +377,30 @@ input[type=number] {
   text-align: center;
   font-weight: 300;
   font-size: 0.8rem;
+}
+
+@keyframes SlideIn {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes SlideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+
+  }
+
+  100% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
 }

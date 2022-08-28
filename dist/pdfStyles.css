@@ -189,6 +189,7 @@ html {
 @page {
   size: A4;
   size: portrait;
+  header: none;
 }
 
 .fd-r {
@@ -198,4 +199,18 @@ html {
   position: relative;
   bottom: 0;
   justify-content: flex-middle;
+}
+
+@print {
+  @page :footer {
+    display: none
+  }
+
+  @page :header {
+    display: none
+  }
+}
+
+.hide {
+  display: none !important;
 }
