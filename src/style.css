@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply inline-block px-6 py-2.5 bg-blue-600 text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center sm:text-xl md:text-lg;
+  }
+  .btn-secondary {
+    @apply inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-middle justify-center;
+  }
+}
+
 :root {
   --eublue: #004494
 }
@@ -24,7 +33,7 @@ html {
   background-color: rgba(94, 94, 94, 0.686), ;
   height: 100%;
   scroll-behavior: smooth;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   -webkit-print-color-adjust: exact;
 
 
