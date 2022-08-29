@@ -1,0 +1,34 @@
+{
+"name": "Cyprus Travel Permit Generator for Minors",
+"short_name": "CY Travel Permit Generator for Minors",
+"start_url": "/",
+"display": "standalone",
+"description": "",
+"lang": "English",
+"dir": "auto",
+"theme_color": "#1F2937",
+"background_color": "#e2e2e2",
+"orientation": "portrait",
+"icons": [
+    {
+        "src": "img/icons/512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+    },
+    {
+        "src": "img/icons/192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+    }
+],
+"screenshots": [
+    {
+        "src": "img/icons/bg.jpg",
+        "sizes": "2880x1800",
+        "type": "image/jpeg",
+        "description": "A screenshot of the home page"
+    }
+]
+}
